@@ -1,0 +1,232 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* display: flex; */
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(48, 45, 43);
+  color: #e9ab26;
+}
+
+.about-container {
+  background-color: #0a68b6; /* Light background color for the about container */
+  box-shadow: 13px 11px 13px rgb(5, 5, 5); /* Box shadow for a subtle elevation effect */
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  margin: 50px auto; /* Center the container on the page */
+  text-align: center;
+}
+.about-container .row {
+  height: 400px;
+}
+
+.about-content {
+  text-align: justify;
+  color: #333; /* Text color for the about content */
+}
+
+.country-container {
+  background-color: rgb(17, 99, 221);
+  /* padding: 20px; */
+  border-radius: 8px;
+  box-shadow: 13px 11px 13px rgb(5, 5, 5);
+  width: 80%;
+  height: 70%;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-bottom: 5%;
+}
+
+.search {
+  margin-left: 70%;
+}
+.country-info {
+  /* margin-top: 20px; */
+  /* background-color: antiquewhite; */
+  /* padding: 30px; */
+}
+
+p {
+  /* background-color: antiquewhite; */
+  color: white;
+  font-size: 18px;
+  text-align: justify;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.letters ul {
+  list-style: none;
+  /* margin: 0; */
+  /* padding: 0; */
+  background-color: #33b5e5;
+  text-align: left;
+}
+.letters li {
+  display: inline-block;
+  border-radius: 1px solid rgb(161, 160, 160);
+  padding: 10px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.letters li:hover {
+  background-color: #e580e9;
+}
+
+.countryList {
+  background-color: azure;
+  border: 1px solid burlywood;
+}
+
+.countryList li {
+  border-bottom: 1px gray;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 15px;
+  font-size: medium;
+  font-weight: bolder;
+  color: rgb(78, 74, 71);
+  text-align: left;
+}
+
+.countryList li:hover {
+  background-color: #f19cea;
+  color: white;
+  animation: country 3s ease-in-out;
+}
+@keyframes country {
+  0% {
+    background-color: rgb(178, 123, 250);
+  }
+  20% {
+    background-color: rgb(44, 196, 163);
+  }
+  40% {
+    background-color: rgb(174, 185, 13);
+  }
+  60% {
+    background-color: rgb(48, 197, 197);
+  }
+  100% {
+    background-color: rgb(243, 110, 172);
+  }
+}
+
+.detailList li.diamond::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-bottom-color: #f9dd94;
+}
+
+.detailList {
+  line-height: 1.5em;
+  margin: 5px 0 15px;
+  padding: 0;
+}
+.d etailList li {
+  list-style: none;
+  position: relative;
+  padding: 0 0 0 20px;
+}
+
+#name {
+  color: #f1c604;
+  font-size: 50px;
+  text-align: center;
+  font-weight: bolder;
+  /* box-shadow: 10px 10px 9px grey; */
+  text-shadow: 2px 2px 5px rgb(122, 121, 121);
+}
+#name:hover {
+  color: #138ebb;
+}
+#flag {
+  /* margin-left: 50px; */
+  width: 40px;
+  height: 180px;
+  display: flex;
+  text-align: left;
+}
+#flagid {
+  border: 1px solid rgb(202, 200, 200);
+  box-shadow: 10px 10px 9px grey;
+}
+
+.detailList {
+  /* background-color: antiquewhite; */
+  font-family: cursive;
+  padding: 12px;
+  margin-left: 30px;
+  font-weight: bold;
+  font-size: large;
+  text-align: left;
+}
+
+.detailList a:link {
+  color: #7e5703;
+}
+
+.detailList li {
+  color: #7e5703;
+  width: 50%;
+  margin: 1px;
+}
+
+.population {
+  display: block;
+  width: 170px;
+  height: 80px;
+  background-color: #2d92b9;
+  border: 1px solid rgb(202, 200, 200);
+  box-shadow: 10px 10px 9px grey;
+  color: white;
+  /* padding-top: 9px; */
+  border-radius: 3px;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 15px;
+}
+.country-info {
+  text-align: center;
+  background-color: white;
+}
+
+.timezone {
+  text-align: left;
+  color: rgb(126, 62, 3);
+}
+
+.country-info table tr td {
+  width: 70%;
+  padding: 10px;
+}
+.country-info .td-2 {
+  /* width: 40%; */
+}
+.country-info table {
+  table-layout: auto;
+  border: 0;
+  margin-left: 30px;
+}
+
+.footer {
+  height: 30px;
+  width: 100%;
+  background-color: #138ebb;
+}
+.footer p {
+  background-color: #138ebb;
+  font-size: 17px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
